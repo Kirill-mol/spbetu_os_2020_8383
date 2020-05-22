@@ -62,6 +62,7 @@ C_ERROR_7:
     mov dx, offset CLEAR_ERROR_7
     call PRINT_STRING
     jmp END_CLEAR
+    
 C_ERROR_8:
     mov dx, offset CLEAR_ERROR_8
     call PRINT_STRING
