@@ -1,15 +1,15 @@
 CODE SEGMENT
     ASSUME CS:CODE, DS:DATA, SS:ASTACK, ES:NOTHING
 
-
 ROUT PROC FAR
     jmp START_ROUT
+    SYMBOL db 0
 	INTER_ID dw 7373h
-	KEEP_IP dw 0
-	KEEP_CS dw 0
+    KEEP_AX dw 0
     KEEP_SS dw 0
     KEEP_SP dw 0
-    KEEP_AX dw 0
+	KEEP_IP dw 0
+	KEEP_CS dw 0
 	KEEP_PSP dw 0
     ROUT_STACK dw 128 DUP(0)
 
