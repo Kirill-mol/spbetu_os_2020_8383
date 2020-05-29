@@ -3,7 +3,6 @@ CODE SEGMENT
 
 ROUT PROC FAR
     jmp START_ROUT
-    SYMBOL db 0
 	INTER_ID dw 7373h
     KEEP_AX dw 0
     KEEP_SS dw 0
